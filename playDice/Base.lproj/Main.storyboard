@@ -62,12 +62,15 @@
                                 <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="E5P-Bg-3iE"/>
-                                    <constraint firstAttribute="width" constant="374" id="ggG-Xv-UtG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="ggG-Xv-UtG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="Ramdom Dice">
                                     <color key="titleColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ramdomDiceButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRd-s5-z3l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -91,6 +94,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstDiceimageView" destination="o2P-gQ-SLR" id="4qY-uz-Zas"/>
+                        <outlet property="secondDiceImageView" destination="PX4-Bq-eGc" id="OyQ-s0-VVE"/>
+                        <outlet property="thirdDiceImageView" destination="euL-ig-0gp" id="LdZ-aY-eBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
